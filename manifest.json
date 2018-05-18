@@ -13,7 +13,7 @@
     "content_scripts": [
         {
             "matches": ["*://fr.wikipedia.org/*"],
-            "js": ["lsf.js"]
+            "js": ["index.js"]
         }
     ]
     

@@ -1,0 +1,9 @@
+{
+  "name": "lsf-wiki",
+  "version": "0.1.0",
+  "description": "Integration of French sign language videos into French Wikipedia.",
+  "main": "index.js",
+  "repository": "git@github.com:parlr/lsf-wiki.git",
+  "author": "Edouard Lopez <contact@edouard-lopez.com>",
+  "license": "GNU GPLv3"
+}
