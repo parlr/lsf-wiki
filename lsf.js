@@ -1,0 +1,1 @@
+alert('LSF is loaded');
