@@ -2,6 +2,7 @@ LSF wiki
 
 > Integration of [French sign language videos](https://commons.wikimedia.org/wiki/Category:Videos_Langue_des_signes_fran%C3%A7aise) into French Wikipedia. 
 
+:warning: This add-on injects JavaScript into web pages.
 
 ### Credits
 
