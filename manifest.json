@@ -1,21 +1,18 @@
 {
-    
-    "manifest_version": 2,
-    "name": "LSF Wiki",
-    "version": "0.1.0",
-    
-    "description": "Integration of French sign language videos into French Wikipedia",
-    
-    "icons": {
-        "48": "icons/icon-48.png",
-        "96": "icons/icon-96.png"    },
-    
-    "content_scripts": [
-        {
-            "matches": ["*://fr.wikipedia.org/*"],
-            "js": ["index.js"],
-            "run_at": "document_idle"
-        }
-    ]
-    
+  "manifest_version": 2,
+  "name": "LSF Wiki",
+  "version": "0.1.0",
+  "description":
+    "Integration of French sign language videos into French Wikipedia",
+  "icons": {
+    "48": "extension/icons/icon-48.png",
+    "96": "extension/icons/icon-96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://fr.wikipedia.org/*"],
+      "js": ["./extension/build.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
