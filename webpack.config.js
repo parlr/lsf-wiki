@@ -1,28 +1,19 @@
 const path = require("path");
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 module.exports = {
-  entry: {
-    entry: "./extension/index.js"
-  },
+  entry: "./src/main.js",
   output: {
-    path: path.resolve(__dirname, "extension"),
+    path: path.resolve(__dirname, "./dist"),
+    publicPath: "/dist/",
     filename: "build.js"
-  },
-  node: {
-    fs: "empty"
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"]
-          }
-        }
-      }
+      { test: /\.vue$/, use: ["vue-loader"] },
+      { test: /\.css$/, use: ["css-loader"] },
+      { test: /\.js$/, use: ["babel-loader"] }
     ]
-  }
+  },
+  plugins: [new VueLoaderPlugin()]
 };
