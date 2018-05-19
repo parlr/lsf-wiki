@@ -1,12 +1,28 @@
 {
   "name": "lsf-wiki",
-  "version": "0.1.0",
   "description": "Integration of French sign language videos into French Wikipedia.",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run dev:compile\" \"npm run dev:run\"",
+    "dev:compile": "webpack --watch",
+    "dev:run": "web-ext run --keep-profile-changes --firefox-profile ~/.mozilla/firefox/tdvepdjn.test/ --start-url https://fr.wikipedia.org/wiki/LSF",
+    "build": "NODE_ENV=production webpack -p --progress --hide-modules"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "babel-loader": "^8.0.0-beta",
+    "concurrently": "^3.5.1",
+    "web-ext": "^2.6.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  },
+  "dependencies": {
+    "got": "^8.3.1",
+    "query-string": "^6.1.0"
+  },
+  "version": "0.1.0",
   "main": "index.js",
   "repository": "git@github.com:parlr/lsf-wiki.git",
-  "author": "Edouard Lopez <contact@edouard-lopez.com>",
-  "license": "GNU GPLv3",
-  "devDependencies": {
-    "web-ext": "^2.6.0"
-  }
+  "author": "Édouard Lopez <contact@edouard-lopez.com>",
+  "license": "GNU GPLv3"
 }
