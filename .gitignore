@@ -1,2 +1,4 @@
 docs/
 tests/
+extension/build.js
+.workspace.code-workspace
