@@ -1,6 +1,7 @@
 {
   "name": "lsf-wiki",
-  "description": "Integration of French sign language videos into French Wikipedia.",
+  "description":
+    "Integration of French sign language videos into French Wikipedia.",
   "scripts": {
     "dev": "webpack-dev-server --hot"
   },
@@ -12,8 +13,8 @@
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.47",
     "@babel/preset-env": "^7.0.0-beta.47",
-    "@vue/babel-preset-app": "^3.0.0-beta.10",
     "@vue/cli-plugin-eslint": "^3.0.0-beta.10",
+    "axios": "^0.18.0",
     "babel-loader": "^8.0.0-beta",
     "css-loader": "^0.28.11",
     "vue-loader": "^15.1.0",
@@ -23,16 +24,11 @@
     "webpack-dev-server": "^3.1.4"
   },
   "babel": {
-    "presets": [
-      "@vue/app"
-    ]
+    "presets": ["@babel/preset-env"]
   },
   "eslintConfig": {
     "root": true,
-    "extends": [
-      "plugin:vue/essential",
-      "eslint:recommended"
-    ]
+    "extends": ["plugin:vue/essential", "eslint:recommended"]
   },
   "version": "0.1.0",
   "repository": "git@github.com:parlr/lsf-wiki.git",

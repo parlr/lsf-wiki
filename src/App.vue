@@ -6,12 +6,25 @@
 
 <script>
 import Article from "./components/Article.vue";
-// import parser from "./parser";
+import api from "axios";
+import parser from "./parser";
+import resource from "./resource";
 
 export default {
   name: "app",
   components: {
     Article
+  },
+  created: function() {
+    debugger;
+    api
+      .get(`${resource.rootUrl}?${resource.videos()}`)
+      .then(response => {
+        console.log(response);
+      })
+      .catch(error => {
+        console.error(error);
+      });
   }
 };
 </script>
