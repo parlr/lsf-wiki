@@ -1,17 +1,24 @@
 import queryString from "query-string";
-// const queryString = require("query-string");
 
 const resource = {
   rootUrl: "http://commons.wikimedia.org/w/api.php",
   categoryName: "Videos_Langue_des_signes_française",
-  videos: () =>
+  videos: term =>
     queryString.stringify({
       action: "query",
+      generator: "categorymembers", // use the generated list to apply `prop`
+      gcmtitle: `Category:${resource.categoryName}`,
+      gcmtype: "file",
+      gcmlimit: 1, // max results
+      gcmsort: "sortkey",
+      gcmstartsortkeyprefix: term,
+      prop: "imageinfo",
+      iiprop: "url", // image info
+
+      redirects: 1,
+      formatversion: 2,
       format: "json",
-      origin: "*",
-      list: "categorymembers",
-      cmtitle: `Category:${resource.categoryName}`,
-      cmtype: "file"
+      origin: "*" // for CORS
     }),
   details: () =>
     queryString.stringify({
