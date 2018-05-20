@@ -9,6 +9,7 @@ import Article from "./components/Article.vue";
 import api from "axios";
 import parser from "./parser";
 import resource from "./resource";
+import data from "./assets/mock-videos.json";
 
 export default {
   name: "app",

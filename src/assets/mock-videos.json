@@ -1,0 +1,58 @@
+{
+  "batchcomplete": "",
+  "continue": {
+    "cmcontinue":
+      "file|424f4e4a4f5552204e4d203120312031202d20454c49582e4f4756|67751576",
+    "continue": "-||"
+  },
+  "query": {
+    "categorymembers": [
+      {
+        "pageid": 67751406,
+        "ns": 6,
+        "title": "File:Achat Nm 1 1 1 - Elix.ogv"
+      },
+      {
+        "pageid": 67751416,
+        "ns": 6,
+        "title": "File:Alasaintglinglin Adv 1 1 - Elix.ogv"
+      },
+      { "pageid": 67751421, "ns": 6, "title": "File:Ame Nf 2 2 1 - Elix.ogv" },
+      {
+        "pageid": 67751435,
+        "ns": 6,
+        "title": "File:Analogie Nf 1 2 1 - Elix.ogv"
+      },
+      {
+        "pageid": 67751524,
+        "ns": 6,
+        "title": "File:Appetit Nm 1 1 1 - Elix.ogv"
+      },
+      {
+        "pageid": 67751532,
+        "ns": 6,
+        "title": "File:Archipel Nm 1 2 1 - Elix.ogv"
+      },
+      {
+        "pageid": 67751543,
+        "ns": 6,
+        "title": "File:Bapteme Nm 2 1 1 - Elix.ogv"
+      },
+      {
+        "pageid": 67751550,
+        "ns": 6,
+        "title": "File:Barbele Adj 1 1 1 - Elix.ogv"
+      },
+      {
+        "pageid": 67751559,
+        "ns": 6,
+        "title": "File:Blouse Nf 2 1 1 - Elix.ogv"
+      },
+      {
+        "pageid": 67751564,
+        "ns": 6,
+        "title": "File:Bobine Nf 2 1 1 - Elix.ogv"
+      }
+    ]
+  }
+}
